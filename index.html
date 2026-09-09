@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4f1e8" />
+    <meta
+      name="description"
+      content="computerfuzzi.de – Technik, die verständlich bleibt und einfach funktioniert."
+    />
+    <meta property="og:title" content="computerfuzzi.de" />
+    <meta
+      property="og:description"
+      content="Technik, die verständlich bleibt und einfach funktioniert."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="de_DE" />
+    <title>computerfuzzi.de – Technik, die einfach funktioniert.</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="computerfuzzi.de – Startseite">
+        <span class="brand-mark" aria-hidden="true">cf</span>
+        <span>computerfuzzi<span class="accent">.de</span></span>
+      </a>
+
+      <button class="theme-toggle" type="button" aria-label="Farbschema wechseln">
+        <svg class="sun" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="4" />
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41" />
+        </svg>
+        <svg class="moon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" />
+        </svg>
+      </button>
+    </header>
+
+    <main id="inhalt">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> Im Aufbau</p>
+          <h1 id="hero-title">
+            Technik darf<br />
+            <em>einfach</em> sein.
+          </h1>
+          <p class="intro">
+            Hier entsteht ein neuer Ort für kluge, verständliche und angenehm
+            unaufgeregte Technik.
+          </p>
+          <a class="button" href="https://github.com/itmitalles-markus">
+            Bis dahin auf GitHub
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <div class="terminal" aria-label="Status der Website">
+          <div class="terminal-bar" aria-hidden="true">
+            <span></span><span></span><span></span>
+            <p>computerfuzzi — status</p>
+          </div>
+          <div class="terminal-body">
+            <p><span class="prompt">$</span> fuzzi --status</p>
+            <dl>
+              <div><dt>Domain</dt><dd>computerfuzzi.de</dd></div>
+              <div><dt>Status</dt><dd class="ok">wird gut</dd></div>
+              <div><dt>Buzzwords</dt><dd>bewusst reduziert</dd></div>
+              <div><dt>Kaffee</dt><dd>████████░░ 80%</dd></div>
+            </dl>
+            <p class="cursor-line" aria-hidden="true">
+              <span class="prompt">$</span> <span class="cursor"></span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="principles" aria-labelledby="principles-title">
+        <p class="section-label" id="principles-title">Der Plan</p>
+        <div class="principle-grid">
+          <article>
+            <span>01</span>
+            <h2>Verständlich</h2>
+            <p>Gute Technik muss sich nicht hinter Fachbegriffen verstecken.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h2>Nützlich</h2>
+            <p>Erst das Problem verstehen, dann die passende Lösung bauen.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h2>Langlebig</h2>
+            <p>Schnell geladen, zugänglich und ohne unnötigen Ballast.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span data-current-year>2026</span> computerfuzzi.de</p>
+      <p>Handgemacht aus HTML, CSS &amp; einer Prise JavaScript.</p>
+    </footer>
+  </body>
+</html>
