@@ -8,6 +8,18 @@ die Versionsnummern folgen [Semantic Versioning](https://semver.org/lang/de/).
 
 Hier sammeln wir Änderungen, die noch keiner veröffentlichten Version zugeordnet sind.
 
+## [0.3.0] – 2026-09-10
+
+### Hinzugefügt
+
+- Bereiche und Navigation für Software, Leistungen, Unternehmen und Kontakt
+- auf kleinen Bildschirmen ausklappbares, barrierearmes Hauptmenü
+
+### Geändert
+
+- Auftritt und Metadaten auf die neue Domain `computerfuzzies.com` umgestellt
+- Geschäftsführer als persönlicher Ansprechpartner mit ergänzendem Expertennetzwerk positioniert
+
 ## [0.2.0] – 2026-09-09
 
 ### Hinzugefügt
@@ -35,6 +47,7 @@ Hier sammeln wir Änderungen, die noch keiner veröffentlichten Version zugeordn
 - automatisches, kostenloses Deployment auf GitHub Pages
 - HTTPS-Vorschau ohne eigene DNS-Konfiguration
 
-[Unveröffentlicht]: https://github.com/itmitalles-markus/computerfuzzi.de/compare/v0.2.0...HEAD
+[Unveröffentlicht]: https://github.com/itmitalles-markus/computerfuzzi.de/compare/v0.3.0...HEAD
+[0.3.0]: https://github.com/itmitalles-markus/computerfuzzi.de/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/itmitalles-markus/computerfuzzi.de/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/itmitalles-markus/computerfuzzi.de/releases/tag/v0.1.0

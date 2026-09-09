@@ -6,16 +6,18 @@
     <meta name="theme-color" content="#f4f1e8" />
     <meta
       name="description"
-      content="computerfuzzi.de – Technik, die verständlich bleibt und einfach funktioniert."
+      content="computerfuzzies.com entwickelt verständliche Software und stellt für komplexere Projekte das passende Expertenteam zusammen."
     />
-    <meta property="og:title" content="computerfuzzi.de" />
+    <meta property="og:title" content="computerfuzzies.com" />
     <meta
       property="og:description"
-      content="Technik, die verständlich bleibt und einfach funktioniert."
+      content="Software und digitale Lösungen, die einfach funktionieren."
     />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="de_DE" />
-    <title>computerfuzzi.de – Technik, die einfach funktioniert.</title>
+    <meta property="og:url" content="https://computerfuzzies.com/" />
+    <link rel="canonical" href="https://computerfuzzies.com/" />
+    <title>computerfuzzies.com – Software, die einfach funktioniert.</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
@@ -24,16 +26,27 @@
     <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
 
     <header class="site-header">
-      <a class="brand" href="./" aria-label="computerfuzzi.de – Startseite">
+      <a class="brand" href="./" aria-label="computerfuzzies.com – Startseite">
         <span class="brand-mark" aria-hidden="true">cf</span>
-        <span>computerfuzzi<span class="accent">.de</span></span>
+        <span>computerfuzzies<span class="accent">.com</span></span>
       </a>
 
       <div class="header-actions">
-        <nav aria-label="Hauptnavigation">
-          <a href="#was-ich-mache">Was ich mache</a>
-          <a href="#arbeitsweise">Arbeitsweise</a>
+        <nav id="site-navigation" aria-label="Hauptnavigation">
+          <a href="#software">Software</a>
+          <a href="#leistungen">Leistungen</a>
+          <a href="#ueber-uns">Über uns</a>
+          <a href="#kontakt">Kontakt</a>
         </nav>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Menü öffnen"
+          aria-controls="site-navigation"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
         <button class="theme-toggle" type="button" aria-label="Farbschema wechseln">
           <svg class="sun" viewBox="0 0 24 24" aria-hidden="true">
             <circle cx="12" cy="12" r="4" />
@@ -49,19 +62,19 @@
     <main id="inhalt">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot"></span> Entwickler · Tüftler · Lösungsfinder</p>
+          <p class="eyebrow"><span class="status-dot"></span> Geschäftsführer · Entwickler · Kaffeetrinker</p>
           <h1 id="hero-title">
             Technik darf<br />
             <em>einfach</em> sein.
           </h1>
           <p class="intro">
-            Ich entwickle digitale Werkzeuge, zerlege knifflige Probleme in
-            machbare Schritte und tüftle so lange, bis aus „müsste doch gehen“
-            ein solides „läuft“ wird.
+            Ich entwickle Software und digitale Lösungen, die echte Probleme
+            lösen. Für komplexere Projekte stelle ich ein passendes Team aus
+            erfahrenen Expertinnen und Experten zusammen.
           </p>
           <div class="hero-actions">
-            <a class="button" href="#was-ich-mache">
-              Was ich so mache
+            <a class="button" href="#leistungen">
+              Leistungen ansehen
               <span aria-hidden="true">↓</span>
             </a>
             <a class="text-link" href="https://github.com/itmitalles-markus">
@@ -73,15 +86,15 @@
         <div class="terminal" aria-label="Status der Website">
           <div class="terminal-bar" aria-hidden="true">
             <span></span><span></span><span></span>
-            <p>computerfuzzi — status</p>
+            <p>computerfuzzies — status</p>
           </div>
           <div class="terminal-body">
-            <p><span class="prompt">$</span> fuzzi --status</p>
+            <p><span class="prompt">$</span> fuzzies --status</p>
             <dl>
-              <div><dt>Domain</dt><dd>computerfuzzi.de</dd></div>
+              <div><dt>Domain</dt><dd>computerfuzzies.com</dd></div>
               <div><dt>Status</dt><dd class="ok">bereit zum Tüfteln</dd></div>
-              <div><dt>Modus</dt><dd>lösungsorientiert</dd></div>
-              <div><dt>Buzzwords</dt><dd>bewusst reduziert</dd></div>
+              <div><dt>Leitung</dt><dd>Geschäftsführer</dd></div>
+              <div><dt>Netzwerk</dt><dd>passende Experten</dd></div>
               <div><dt>Kaffee</dt><dd>████████░░ 80%</dd></div>
             </dl>
             <p class="cursor-line" aria-hidden="true">
@@ -91,61 +104,92 @@
         </div>
       </section>
 
-      <section class="principles" id="was-ich-mache" aria-labelledby="principles-title">
-        <p class="section-label" id="principles-title">Was ich mitbringe</p>
+      <section class="principles" id="software" aria-labelledby="software-title">
+        <p class="section-label" id="software-title">Software</p>
         <div class="principle-grid">
           <article>
             <span>01</span>
-            <h2>Entwickeln</h2>
+            <h2>Individuelle Anwendungen</h2>
             <p>
-              Aus einer Idee wird funktionierende Software – sinnvoll aufgebaut,
-              verständlich dokumentiert und ohne unnötigen Ballast.
+              Web-, Desktop- und mobile Anwendungen, die zu den Menschen und
+              Abläufen passen – statt umgekehrt.
             </p>
           </article>
           <article>
             <span>02</span>
-            <h2>Tüfteln</h2>
+            <h2>Automatisierung</h2>
             <p>
-              Ausprobieren, nachmessen, auseinandernehmen, neu zusammensetzen.
-              Neugier ist meistens das bessere Werkzeug als ein fertiger Baukasten.
+              Wiederkehrende Arbeit vereinfachen, Systeme sinnvoll verbinden
+              und aus manuellen Umwegen verlässliche Abläufe machen.
             </p>
           </article>
           <article>
             <span>03</span>
-            <h2>Lösen</h2>
+            <h2>Prototypen &amp; Werkzeuge</h2>
             <p>
-              Ich suche nicht die komplizierteste Antwort, sondern die Lösung,
-              die zum echten Problem und zu den Menschen dahinter passt.
+              Ideen früh greifbar machen, im echten Einsatz testen und daraus
+              Schritt für Schritt eine solide Lösung entwickeln.
             </p>
           </article>
         </div>
       </section>
 
-      <section class="about" id="arbeitsweise" aria-labelledby="about-title">
+      <section class="principles" id="leistungen" aria-labelledby="services-title">
+        <p class="section-label" id="services-title">Leistungen</p>
+        <div class="principle-grid">
+          <article>
+            <span>01</span>
+            <h2>Verstehen</h2>
+            <p>
+              Anforderungen sortieren, technische Möglichkeiten prüfen und
+              gemeinsam herausfinden, welche Lösung wirklich gebraucht wird.
+            </p>
+          </article>
+          <article>
+            <span>02</span>
+            <h2>Umsetzen</h2>
+            <p>
+              Software entwickeln, Bestehendes verbessern und knifflige Fehler
+              nachvollziehbar und nachhaltig beheben.
+            </p>
+          </article>
+          <article>
+            <span>03</span>
+            <h2>Verstärken</h2>
+            <p>
+              Wenn mehr Fachwissen gefragt ist, kommen gezielt erfahrene
+              Expertinnen und Experten aus meinem Netzwerk dazu.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="about" id="ueber-uns" aria-labelledby="about-title">
         <div>
-          <p class="section-label">Wie ich ticke</p>
-          <h2 id="about-title">Erst verstehen.<br />Dann <em>machen.</em></h2>
+          <p class="section-label">Wer dahintersteht</p>
+          <h2 id="about-title">Ein Ansprechpartner.<br />Das passende <em>Team.</em></h2>
         </div>
         <div class="about-copy">
           <p class="lead">
-            Mich reizen die Aufgaben, bei denen die Lösung nicht schon fertig in
-            der Schublade liegt.
+            Ich bin der Geschäftsführer von computerfuzzies.com – und immer
+            noch der mit dem Kaffee.
           </p>
           <p>
-            Ich höre zu, frage nach und arbeite mich ins eigentliche Problem ein.
-            Dann baue ich lieber früh etwas Kleines, das man ausprobieren kann,
-            statt lange über die perfekte Theorie zu reden.
+            Ich begleite Projekte persönlich: vom ersten Gespräch über die
+            technische Idee bis zur fertigen Lösung. Du hast dabei einen festen
+            Ansprechpartner, der den Überblick behält und Entscheidungen
+            verständlich macht.
           </p>
           <p>
-            Dabei darf Technik anspruchsvoll sein – das Ergebnis sollte sich
-            trotzdem einfach anfühlen. Und wenn etwas nicht funktioniert, wird
-            nicht wild geklickt: Dann wird gesucht, verstanden und ordentlich repariert.
+            Braucht ein Vorhaben zusätzliche Erfahrung, arbeite ich mit passenden
+            Fachleuten zusammen. So entsteht genau das Team, das die Aufgabe
+            verlangt – auch für komplexere Projekte, ohne unnötigen Apparat.
           </p>
         </div>
       </section>
 
       <section class="signals" aria-labelledby="signals-title">
-        <p class="section-label" id="signals-title">Dafür werde ich hellhörig</p>
+        <p class="section-label" id="signals-title">Dafür werden wir hellhörig</p>
         <ul class="tag-list" aria-label="Themen und Aufgaben">
           <li>„Das müsste man automatisieren.“</li>
           <li>Werkzeuge mit echtem Nutzen</li>
@@ -157,7 +201,7 @@
         </ul>
       </section>
 
-      <section class="contact" aria-labelledby="contact-title">
+      <section class="contact" id="kontakt" aria-labelledby="contact-title">
         <p class="section-label">Noch ein Problem übrig?</p>
         <div class="contact-row">
           <h2 id="contact-title">Du hast da so ein Ding,<br />das endlich <em>laufen</em> soll?</h2>
@@ -170,9 +214,9 @@
     </main>
 
     <footer>
-      <p>© <span data-current-year>2026</span> computerfuzzi.de</p>
+      <p>© <span data-current-year>2026</span> computerfuzzies.com</p>
       <p>Handgemacht aus HTML, CSS, einer Prise JavaScript &amp; Kaffee.</p>
-      <p class="version">v<span data-version>0.2.0</span></p>
+      <p class="version">v<span data-version>0.3.0</span></p>
     </footer>
   </body>
 </html>

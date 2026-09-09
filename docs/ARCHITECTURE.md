@@ -3,7 +3,7 @@
 ## Ziel
 
 Die Website soll schnell, zuverlässig, barrierearm und leicht veränderbar bleiben.
-Sie ist eine persönliche Website – kein Framework-Demoprojekt.
+Sie ist eine Unternehmenswebsite – kein Framework-Demoprojekt.
 
 ## Entscheidungen
 
@@ -16,7 +16,7 @@ auch in Zukunft direkt lesbar.
 ### Progressive Verbesserung
 
 Alle wesentlichen Inhalte funktionieren ohne JavaScript. JavaScript ergänzt nur
-den Farbschema-Schalter und die automatisch aktuelle Jahreszahl.
+den Farbschema-Schalter, das mobile Menü und die automatisch aktuelle Jahreszahl.
 
 ### Keine externen Ressourcen
 
@@ -26,8 +26,9 @@ keine Tracker, Analysewerkzeuge oder Drittanbieter-CDNs ein und setzt selbst kei
 ### GitHub Pages
 
 Ein Push auf `main` startet den Workflow `.github/workflows/pages.yml`. Er lädt die
-statischen Dateien als Pages-Artefakt hoch und veröffentlicht sie mit HTTPS. Eine
-eigene Domain kann später ergänzt werden, ohne die Website neu zu bauen.
+statischen Dateien als Pages-Artefakt hoch und veröffentlicht sie mit HTTPS. Die
+Domain `computerfuzzies.com` wird separat in GitHub Pages und beim DNS-Anbieter
+zugeordnet; der Workflow benötigt dafür keine `CNAME`-Datei.
 
 ## Projektstruktur
 

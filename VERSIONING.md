@@ -71,7 +71,7 @@ Ein älterer Stand wird niemals per Force-Push über `main` geschrieben.
 2. Die endgültige Versionsnummer und das Datum ergänzen.
 3. Die Versionsnummer in der Datei `VERSION` aktualisieren.
 4. Änderungen prüfen, committen und auf `main` pushen.
-5. Einen signierten oder annotierten Tag erstellen: `git tag -a vX.Y.Z -m "computerfuzzi.de vX.Y.Z"`.
+5. Einen signierten oder annotierten Tag erstellen: `git tag -a vX.Y.Z -m "computerfuzzies.com vX.Y.Z"`.
 6. Den Tag pushen: `git push origin vX.Y.Z`.
 7. Aus dem Tag ein GitHub-Release mit den Hinweisen aus dem Changelog erstellen.
 

@@ -1,7 +1,11 @@
 const root = document.documentElement;
+root.classList.add("js");
+
 const themeToggle = document.querySelector(".theme-toggle");
 const themeMeta = document.querySelector('meta[name="theme-color"]');
 const savedTheme = localStorage.getItem("theme");
+const menuToggle = document.querySelector(".menu-toggle");
+const navigation = document.querySelector("#site-navigation");
 
 if (savedTheme === "light" || savedTheme === "dark") {
   setTheme(savedTheme);
@@ -13,6 +17,28 @@ themeToggle?.addEventListener("click", () => {
   const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
   setTheme(nextTheme);
   localStorage.setItem("theme", nextTheme);
+});
+
+menuToggle?.addEventListener("click", () => {
+  const menuIsOpen = menuToggle.getAttribute("aria-expanded") === "true";
+  setMenuState(!menuIsOpen);
+});
+
+navigation?.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => setMenuState(false));
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && menuToggle?.getAttribute("aria-expanded") === "true") {
+    setMenuState(false);
+    menuToggle?.focus();
+  }
+});
+
+document.addEventListener("click", (event) => {
+  if (!event.target.closest(".site-header")) {
+    setMenuState(false);
+  }
 });
 
 document.querySelectorAll("[data-current-year]").forEach((element) => {
@@ -37,4 +63,10 @@ function setTheme(theme) {
     "aria-label",
     theme === "dark" ? "Helles Farbschema verwenden" : "Dunkles Farbschema verwenden",
   );
+}
+
+function setMenuState(isOpen) {
+  navigation?.classList.toggle("is-open", isOpen);
+  menuToggle?.setAttribute("aria-expanded", isOpen.toString());
+  menuToggle?.setAttribute("aria-label", isOpen ? "Menü schließen" : "Menü öffnen");
 }

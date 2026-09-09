@@ -1,6 +1,6 @@
-# computerfuzzi.de
+# computerfuzzies.com
 
-Die zukünftige Website für **computerfuzzi.de** – schnell, zugänglich und ohne Build-Abhängigkeiten.
+Die Website für **computerfuzzies.com** – schnell, zugänglich und ohne Build-Abhängigkeiten.
 
 ## Lokal ansehen
 
@@ -17,13 +17,15 @@ Danach `http://localhost:8000` öffnen.
 Jeder Push auf `main` veröffentlicht die Seite über GitHub Actions auf GitHub Pages.
 Vor dem ersten Deployment muss im Repository unter **Settings → Pages → Source** einmal **GitHub Actions** ausgewählt werden.
 
-Solange keine eigene Domain verbunden ist, lautet die Adresse:
+Solange die neue Domain noch nicht mit GitHub Pages verbunden ist, lautet die Vorschauadresse:
 
 ```text
 https://itmitalles-markus.github.io/computerfuzzi.de/
 ```
 
-Die Domain `computerfuzzi.de` wird später in den Pages-Einstellungen und beim DNS-Anbieter verbunden. Bis dahin ist keine `CNAME`-Datei nötig.
+Die Domain `computerfuzzies.com` wird in den Pages-Einstellungen und beim DNS-Anbieter verbunden.
+Da die Veröffentlichung über einen eigenen GitHub-Actions-Workflow läuft, ist dafür
+keine `CNAME`-Datei im Repository erforderlich.
 
 ## Technik
 
