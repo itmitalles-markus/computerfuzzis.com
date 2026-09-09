@@ -33,3 +33,12 @@ Die Domain `computerfuzzi.de` wird später in den Pages-Einstellungen und beim D
 - eigene 404-Seite und SVG-Favicon
 - automatisches Deployment mit GitHub Pages
 
+## Versionen
+
+Veröffentlichte Stände erhalten eine feste Versionsnummer, einen Git-Tag und ein
+GitHub-Release. Die aktuelle Version steht in [`VERSION`](VERSION), sichtbare
+Änderungen in [`CHANGELOG.md`](CHANGELOG.md).
+
+Wie man Versionen vergleicht oder wiederherstellt, beschreibt
+[`VERSIONING.md`](VERSIONING.md). Hintergründe zum schlanken technischen Aufbau
+stehen unter [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
