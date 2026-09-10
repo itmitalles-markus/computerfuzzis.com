@@ -443,6 +443,26 @@ h1 em {
   line-height: 1.6;
 }
 
+.section-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-underline-offset: 0.25rem;
+}
+
+.section-action:hover {
+  color: var(--text);
+}
+
+.section-action:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--accent) 55%, transparent);
+  outline-offset: 4px;
+}
+
 .about {
   display: grid;
   grid-template-columns: minmax(0, 0.85fr) minmax(20rem, 1.15fr);

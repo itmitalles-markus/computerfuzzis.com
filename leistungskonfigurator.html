@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4f1e8" />
+    <meta
+      name="description"
+      content="Der kostenlose Projektfinder von computerfuzzies.com: Vorhaben mit wenigen Begriffen sortieren und passende Leistungen entdecken."
+    />
+    <meta property="og:title" content="Projektfinder – computerfuzzies.com" />
+    <meta
+      property="og:description"
+      content="Ein Projekt in wenigen Schritten einordnen – ohne Registrierung und ohne Datenübertragung."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:url" content="https://computerfuzzies.com/leistungskonfigurator.html" />
+    <link rel="canonical" href="https://computerfuzzies.com/leistungskonfigurator.html" />
+    <title>Projektfinder – computerfuzzies.com</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="leistungskonfigurator.css" />
+    <script src="script.js" defer></script>
+    <script src="leistungskonfigurator.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="computerfuzzies.com – Startseite">
+        <span class="brand-mark" aria-hidden="true">cf</span>
+        <span>computerfuzzies<span class="accent">.com</span></span>
+      </a>
+
+      <div class="header-actions">
+        <nav id="site-navigation" aria-label="Hauptnavigation">
+          <a href="./#start">Start</a>
+          <a href="./#leistungen">Leistungen</a>
+          <a href="./#loesungen">Lösungen</a>
+          <a href="voip-pbx.html">Wissen</a>
+          <a href="./#ueber-uns">Über uns</a>
+          <a href="./#kontakt">Kontakt</a>
+        </nav>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Menü öffnen"
+          aria-controls="site-navigation"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <button class="theme-toggle" type="button" aria-label="Farbschema wechseln">
+          <svg class="sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41" />
+          </svg>
+          <svg class="moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="inhalt">
+      <section class="finder-hero" aria-labelledby="finder-title">
+        <div>
+          <p class="eyebrow"><span class="status-dot"></span> Projektfinder · etwa 2 Minuten</p>
+          <h1 id="finder-title">Was brauchst du<br /><em>wirklich?</em></h1>
+          <p class="intro">
+            Wähle die Begriffe, die zu deinem Vorhaben passen. Daraus entsteht
+            eine erste, verständliche Einordnung – ohne Registrierung und ohne
+            dass deine Auswahl übertragen wird.
+          </p>
+          <a class="button" href="#projektfinder">
+            Projekt sortieren
+            <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="finder-preview" aria-label="Beispiel für ein entstehendes Projektprofil">
+          <p><span class="prompt">$</span> projekt --sortieren</p>
+          <div class="preview-cloud" aria-hidden="true">
+            <span>Automatisierung</span>
+            <span>Zeit sparen</span>
+            <span>Kleines Team</span>
+            <span>Bestehender Ablauf</span>
+          </div>
+          <p class="preview-result"><span>Ergebnis</span> Individuelle Lösung</p>
+        </div>
+      </section>
+
+      <section class="finder-intro" aria-labelledby="finder-intro-title">
+        <div>
+          <p class="section-label">So funktioniert es</p>
+          <h2 id="finder-intro-title">Fünf Fragen. Ein klareres Bild.</h2>
+        </div>
+        <p>
+          Es gibt keine falschen Antworten. Der Projektfinder erkennt nur Muster
+          in deiner Auswahl und schlägt einen sinnvollen nächsten Schritt vor.
+          Das Ergebnis ist eine Orientierung – kein automatisches Angebot.
+        </p>
+      </section>
+
+      <section class="finder-section" id="projektfinder" aria-labelledby="configurator-title">
+        <div class="finder-section-heading">
+          <p class="section-label">Leistungskonfigurator</p>
+          <h2 id="configurator-title">Stell dein Projektbild zusammen.</h2>
+        </div>
+
+        <div class="configurator" data-configurator>
+          <div class="configurator-step" data-step-panel>
+            <div class="progress-header">
+              <p data-progress-text>Schritt 1 von 5</p>
+              <p data-selection-count>0 ausgewählt</p>
+            </div>
+            <div
+              class="finder-progress"
+              role="progressbar"
+              aria-label="Fortschritt im Projektfinder"
+              aria-valuemin="1"
+              aria-valuemax="5"
+              aria-valuenow="1"
+            >
+              <span data-progress-bar></span>
+            </div>
+
+            <div class="question-heading">
+              <p class="question-kicker" data-question-kicker>Dein Thema</p>
+              <h3 id="finder-question" data-question>Worum geht es?</h3>
+              <p data-question-hint>Wähle bis zu drei Begriffe.</p>
+            </div>
+
+            <div
+              class="word-cloud"
+              role="group"
+              aria-labelledby="finder-question"
+              data-word-cloud
+            ></div>
+
+            <p class="selection-message" data-selection-message aria-live="polite"></p>
+
+            <div class="finder-actions">
+              <button class="finder-button finder-button-secondary" type="button" data-back>
+                Zurück
+              </button>
+              <button class="finder-button finder-button-primary" type="button" data-next>
+                <span data-next-label>Weiter</span>
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+
+          <aside class="project-core" aria-labelledby="project-core-title">
+            <p class="project-core-label">Dein Projektbild</p>
+            <h3 id="project-core-title">Aus Begriffen wird Richtung.</h3>
+            <div class="project-token-list" data-project-tokens>
+              <p data-empty-selection>Noch nichts ausgewählt.</p>
+            </div>
+            <p class="privacy-note">
+              Deine Auswahl bleibt auf diesem Gerät und wird beim Neuladen verworfen.
+            </p>
+          </aside>
+
+          <section class="finder-result" data-result hidden aria-labelledby="result-title" aria-live="polite">
+            <div class="result-heading">
+              <p class="section-label">Deine erste Einordnung</p>
+              <span class="result-complexity" data-result-complexity></span>
+              <h2 id="result-title" data-result-title></h2>
+              <p class="result-description" data-result-description></p>
+            </div>
+
+            <div class="result-grid">
+              <div>
+                <h3>Dein Projektprofil</h3>
+                <dl class="result-summary" data-result-summary></dl>
+              </div>
+              <div>
+                <h3>Passende Leistungen</h3>
+                <ul class="result-services" data-result-services></ul>
+                <p class="result-next-step" data-result-next-step></p>
+              </div>
+            </div>
+
+            <div class="result-text-wrap">
+              <label for="result-text">Zusammenfassung für deine Anfrage</label>
+              <textarea id="result-text" data-result-text readonly></textarea>
+            </div>
+
+            <p class="selection-message" data-result-message aria-live="polite"></p>
+
+            <div class="finder-actions finder-result-actions">
+              <a class="finder-button finder-button-primary" data-email-result href="mailto:markus.sukhaboon@gmail.com">
+                Anfrage vorbereiten
+                <span aria-hidden="true">→</span>
+              </a>
+              <button class="finder-button finder-button-secondary" type="button" data-copy-result hidden>
+                Text kopieren
+              </button>
+              <button class="finder-button finder-button-secondary" type="button" data-restart>
+                Neu starten
+              </button>
+            </div>
+            <p class="result-disclaimer">Die Einordnung ist unverbindlich und ersetzt noch keine gemeinsame Anforderungsanalyse.</p>
+          </section>
+        </div>
+
+        <noscript>
+          <div class="finder-noscript">
+            <h3>Der interaktive Projektfinder benötigt JavaScript.</h3>
+            <p>
+              Du kannst dein Vorhaben trotzdem direkt per E-Mail beschreiben:
+              Worum geht es, was soll besser werden, wo steht das Projekt, wen
+              betrifft es und wann soll es starten?
+            </p>
+            <a class="button" href="mailto:markus.sukhaboon@gmail.com?subject=Projektanfrage%20%C3%BCber%20computerfuzzies.com">Projekt beschreiben</a>
+          </div>
+        </noscript>
+      </section>
+
+      <section class="finder-boundary" aria-labelledby="boundary-title">
+        <div>
+          <p class="section-label">Was das Ergebnis bedeutet</p>
+          <h2 id="boundary-title">Orientierung statt Glaskugel.</h2>
+        </div>
+        <div>
+          <p>
+            Der Projektfinder arbeitet mit transparenten, festen Regeln. Er nutzt
+            keine künstliche Intelligenz und berechnet weder Preise noch Termine.
+          </p>
+          <p>
+            Die Auswahl hilft dabei, das erste Gespräch konkreter zu machen. Erst
+            wenn Ziele, Rahmen und vorhandene Technik bekannt sind, lässt sich eine
+            belastbare Lösung planen.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span data-current-year>2026</span> computerfuzzies.com · v<span data-version>0.5.0</span></p>
+      <p>Dein Projekt. Erst sortiert, dann gelöst.</p>
+      <nav class="footer-nav" aria-label="Rechtliche Hinweise">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </nav>
+    </footer>
+  </body>
+</html>

@@ -8,6 +8,17 @@ die Versionsnummern folgen [Semantic Versioning](https://semver.org/lang/de/).
 
 Hier sammeln wir Änderungen, die noch keiner veröffentlichten Version zugeordnet sind.
 
+## [0.5.0] – 2026-09-10
+
+### Hinzugefügt
+
+- regelbasierter Leistungskonfigurator mit fünf zugänglichen Wortwolken
+- lokale Projekteinordnung mit Zusammenfassung und vorbereitetem E-Mail-Entwurf
+
+### Geändert
+
+- Datenschutzerklärung um die rein lokale Verarbeitung im Projektfinder ergänzt
+
 ## [0.4.0] – 2026-09-10
 
 ### Hinzugefügt
@@ -65,7 +76,8 @@ Hier sammeln wir Änderungen, die noch keiner veröffentlichten Version zugeordn
 - automatisches, kostenloses Deployment auf GitHub Pages
 - HTTPS-Vorschau ohne eigene DNS-Konfiguration
 
-[Unveröffentlicht]: https://github.com/itmitalles-markus/computerfuzzi.de/compare/v0.4.0...HEAD
+[Unveröffentlicht]: https://github.com/itmitalles-markus/computerfuzzi.de/compare/v0.5.0...HEAD
+[0.5.0]: https://github.com/itmitalles-markus/computerfuzzi.de/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/itmitalles-markus/computerfuzzi.de/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/itmitalles-markus/computerfuzzi.de/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/itmitalles-markus/computerfuzzi.de/compare/v0.1.0...v0.2.0

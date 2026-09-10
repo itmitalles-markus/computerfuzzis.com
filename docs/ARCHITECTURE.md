@@ -44,6 +44,9 @@ zugeordnet; der Workflow benötigt dafür keine `CNAME`-Datei.
 ├── datenschutz.html             # Datenschutzhinweise
 ├── impressum.html               # Anbieterkennzeichnung
 ├── index.html                   # Inhalt und Struktur
+├── leistungskonfigurator.html   # interaktiver Projektfinder
+├── leistungskonfigurator.css    # Gestaltung des Projektfinders
+├── leistungskonfigurator.js     # Fragen, Regeln und lokale Auswertung
 ├── voip-pbx.html                # modularer PBX-Erklärbereich
 ├── voip-pbx.css                 # Gestaltung der PBX-Szenarien
 ├── voip-pbx.js                  # progressive Szenario-Animationen
@@ -59,6 +62,8 @@ zugeordnet; der Workflow benötigt dafür keine `CNAME`-Datei.
 - Inhalte bleiben auch ohne JavaScript erreichbar.
 - Erklärmodule enthalten ihre vollständige Aussage im HTML; Animationen sind
   progressive Ergänzungen und respektieren reduzierte Bewegung.
+- Der Leistungskonfigurator verarbeitet Auswahlen nur im flüchtigen Browserzustand
+  und überträgt ohne ausdrückliche Aktion keine Daten.
 - Neue Bibliotheken brauchen einen konkreten Nutzen, nicht nur Neuheitswert.
 - Keine Geheimnisse, Tokens oder personenbezogenen Daten ins Repository schreiben.
 - Vor jeder Veröffentlichung interne Links und das Pages-Deployment prüfen.
