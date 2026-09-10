@@ -9,6 +9,7 @@ die Versionsnummern folgen [Semantic Versioning](https://semver.org/lang/de/).
 ### Geändert
 
 - Schreibweise von Marke, Domain und Repository einheitlich auf `computerfuzzis.com` korrigiert
+- automatische, repository-spezifisch authentifizierte Spiegelung aller Branches und Tags in das private persönliche Repository ergänzt
 
 ## [0.5.1] – 2026-09-10
 

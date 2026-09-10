@@ -1,0 +1,49 @@
+name: Sync private personal mirror
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: personal-mirror
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: github.repository == 'itmitalles-markus/computerfuzzis.com'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out complete history
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Configure repository-scoped deploy key
+        env:
+          MIRROR_SSH_KEY: ${{ secrets.PERSONAL_MIRROR_SSH_KEY }}
+        run: |
+          install -m 700 -d "$RUNNER_TEMP/mirror-ssh"
+          printf '%s\n' "$MIRROR_SSH_KEY" > "$RUNNER_TEMP/mirror-ssh/key"
+          chmod 600 "$RUNNER_TEMP/mirror-ssh/key"
+          curl --fail --silent --show-error https://api.github.com/meta \
+            | jq -r '.ssh_keys[] | "github.com " + .' > "$RUNNER_TEMP/mirror-ssh/known_hosts"
+
+      - name: Synchronize all branches and tags
+        env:
+          GIT_SSH_COMMAND: >-
+            ssh -i ${{ runner.temp }}/mirror-ssh/key
+            -o IdentitiesOnly=yes
+            -o StrictHostKeyChecking=yes
+            -o UserKnownHostsFile=${{ runner.temp }}/mirror-ssh/known_hosts
+          MIRROR_REPOSITORY: git@github.com:MarkusSukhaboon/computerfuzzis.com.git
+        run: |
+          git fetch --prune --tags origin '+refs/heads/*:refs/remotes/origin/*'
+          git update-ref -d refs/remotes/origin/HEAD || true
+          git push --force --prune "$MIRROR_REPOSITORY" \
+            'refs/remotes/origin/*:refs/heads/*'
+          git push --force --prune "$MIRROR_REPOSITORY" \
+            'refs/tags/*:refs/tags/*'

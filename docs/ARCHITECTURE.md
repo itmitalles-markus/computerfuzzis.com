@@ -33,6 +33,15 @@ statischen Dateien als Pages-Artefakt hoch und veröffentlicht sie mit HTTPS. Di
 Domain `computerfuzzis.com` wird separat in GitHub Pages und beim DNS-Anbieter
 zugeordnet; der Workflow benötigt dafür keine `CNAME`-Datei.
 
+## Privater Git-Spiegel
+
+Der Workflow `.github/workflows/sync-personal-mirror.yml` spiegelt nach jedem
+Push alle Branches und Tags in das private Repository
+`MarkusSukhaboon/computerfuzzis.com`. Der dafür verwendete Deploy Key ist auf
+dieses eine Ziel-Repository beschränkt. Er kann Git-Referenzen aktualisieren,
+aber weder das Repository löschen noch dessen administrativen Einstellungen
+ändern.
+
 ## Projektstruktur
 
 ```text
