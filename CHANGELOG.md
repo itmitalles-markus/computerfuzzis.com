@@ -6,13 +6,15 @@ die Versionsnummern folgen [Semantic Versioning](https://semver.org/lang/de/).
 
 ## [Unveröffentlicht]
 
-Hier sammeln wir Änderungen, die noch keiner veröffentlichten Version zugeordnet sind.
+### Geändert
+
+- Schreibweise von Marke, Domain und Repository einheitlich auf `computerfuzzis.com` korrigiert
 
 ## [0.5.1] – 2026-09-10
 
 ### Geändert
 
-- GitHub-Repository und GitHub-Pages-Adresse an `computerfuzzies.com` angeglichen
+- GitHub-Repository und GitHub-Pages-Adresse an `computerfuzzis.com` angeglichen
 
 ## [0.5.0] – 2026-09-10
 
@@ -52,7 +54,7 @@ Hier sammeln wir Änderungen, die noch keiner veröffentlichten Version zugeordn
 
 ### Geändert
 
-- Auftritt und Metadaten auf die neue Domain `computerfuzzies.com` umgestellt
+- Auftritt und Metadaten auf die neue Domain `computerfuzzis.com` umgestellt
 - Geschäftsführer als persönlicher Ansprechpartner mit ergänzendem Expertennetzwerk positioniert
 
 ## [0.2.0] – 2026-09-09
@@ -74,7 +76,7 @@ Hier sammeln wir Änderungen, die noch keiner veröffentlichten Version zugeordn
 
 ### Hinzugefügt
 
-- erste öffentliche Landingpage für `computerfuzzi.de`
+- erste öffentliche Landingpage für `computerfuzzis.com`
 - responsives Layout für kleine und große Bildschirme
 - automatischer Hell-/Dunkelmodus mit manueller Umschaltung
 - Fuzzi-Terminal mit Kaffee-Status
@@ -82,10 +84,10 @@ Hier sammeln wir Änderungen, die noch keiner veröffentlichten Version zugeordn
 - automatisches, kostenloses Deployment auf GitHub Pages
 - HTTPS-Vorschau ohne eigene DNS-Konfiguration
 
-[Unveröffentlicht]: https://github.com/itmitalles-markus/computerfuzzies.com/compare/v0.5.1...HEAD
-[0.5.1]: https://github.com/itmitalles-markus/computerfuzzies.com/compare/v0.5.0...v0.5.1
-[0.5.0]: https://github.com/itmitalles-markus/computerfuzzies.com/compare/v0.4.0...v0.5.0
-[0.4.0]: https://github.com/itmitalles-markus/computerfuzzies.com/compare/v0.3.0...v0.4.0
-[0.3.0]: https://github.com/itmitalles-markus/computerfuzzies.com/compare/v0.2.0...v0.3.0
-[0.2.0]: https://github.com/itmitalles-markus/computerfuzzies.com/compare/v0.1.0...v0.2.0
-[0.1.0]: https://github.com/itmitalles-markus/computerfuzzies.com/releases/tag/v0.1.0
+[Unveröffentlicht]: https://github.com/itmitalles-markus/computerfuzzis.com/compare/v0.5.1...HEAD
+[0.5.1]: https://github.com/itmitalles-markus/computerfuzzis.com/compare/v0.5.0...v0.5.1
+[0.5.0]: https://github.com/itmitalles-markus/computerfuzzis.com/compare/v0.4.0...v0.5.0
+[0.4.0]: https://github.com/itmitalles-markus/computerfuzzis.com/compare/v0.3.0...v0.4.0
+[0.3.0]: https://github.com/itmitalles-markus/computerfuzzis.com/compare/v0.2.0...v0.3.0
+[0.2.0]: https://github.com/itmitalles-markus/computerfuzzis.com/compare/v0.1.0...v0.2.0
+[0.1.0]: https://github.com/itmitalles-markus/computerfuzzis.com/releases/tag/v0.1.0

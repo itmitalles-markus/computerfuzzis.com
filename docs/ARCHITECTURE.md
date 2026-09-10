@@ -30,7 +30,7 @@ durch das Hosting über GitHub Pages.
 
 Ein Push auf `main` startet den Workflow `.github/workflows/pages.yml`. Er lädt die
 statischen Dateien als Pages-Artefakt hoch und veröffentlicht sie mit HTTPS. Die
-Domain `computerfuzzies.com` wird separat in GitHub Pages und beim DNS-Anbieter
+Domain `computerfuzzis.com` wird separat in GitHub Pages und beim DNS-Anbieter
 zugeordnet; der Workflow benötigt dafür keine `CNAME`-Datei.
 
 ## Projektstruktur

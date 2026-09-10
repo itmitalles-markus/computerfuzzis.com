@@ -1,6 +1,6 @@
-# computerfuzzies.com
+# computerfuzzis.com
 
-Die Website für **computerfuzzies.com** – schnell, zugänglich und ohne Build-Abhängigkeiten.
+Die Website für **computerfuzzis.com** – schnell, zugänglich und ohne Build-Abhängigkeiten.
 
 ## Lokal ansehen
 
@@ -20,10 +20,10 @@ Vor dem ersten Deployment muss im Repository unter **Settings → Pages → Sour
 Solange die neue Domain noch nicht mit GitHub Pages verbunden ist, lautet die Vorschauadresse:
 
 ```text
-https://itmitalles-markus.github.io/computerfuzzies.com/
+https://itmitalles-markus.github.io/computerfuzzis.com/
 ```
 
-Die Domain `computerfuzzies.com` wird in den Pages-Einstellungen und beim DNS-Anbieter verbunden.
+Die Domain `computerfuzzis.com` wird in den Pages-Einstellungen und beim DNS-Anbieter verbunden.
 Da die Veröffentlichung über einen eigenen GitHub-Actions-Workflow läuft, ist dafür
 keine `CNAME`-Datei im Repository erforderlich.
 

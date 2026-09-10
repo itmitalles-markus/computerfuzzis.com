@@ -24,7 +24,7 @@ Vor Version `1.0.0` darf sich die Struktur noch deutlich weiterentwickeln.
 ## Eine frühere Version ansehen
 
 Alle Versionen und die zugehörigen Hinweise stehen unter
-[GitHub Releases](https://github.com/itmitalles-markus/computerfuzzies.com/releases).
+[GitHub Releases](https://github.com/itmitalles-markus/computerfuzzis.com/releases).
 
 Eine Datei aus einer Version im Terminal anzeigen:
 
@@ -41,7 +41,7 @@ git diff v0.1.0..main
 Die komplette Version gefahrlos in einen separaten Ordner auschecken:
 
 ```bash
-git worktree add ../computerfuzzies-v0.1.0 v0.1.0
+git worktree add ../computerfuzzis-v0.1.0 v0.1.0
 ```
 
 Der aktuelle Arbeitsordner und `main` bleiben dabei unverändert.
@@ -71,7 +71,7 @@ Ein älterer Stand wird niemals per Force-Push über `main` geschrieben.
 2. Die endgültige Versionsnummer und das Datum ergänzen.
 3. Die Versionsnummer in der Datei `VERSION` aktualisieren.
 4. Änderungen prüfen, committen und auf `main` pushen.
-5. Einen signierten oder annotierten Tag erstellen: `git tag -a vX.Y.Z -m "computerfuzzies.com vX.Y.Z"`.
+5. Einen signierten oder annotierten Tag erstellen: `git tag -a vX.Y.Z -m "computerfuzzis.com vX.Y.Z"`.
 6. Den Tag pushen: `git push origin vX.Y.Z`.
 7. Aus dem Tag ein GitHub-Release mit den Hinweisen aus dem Changelog erstellen.
 
