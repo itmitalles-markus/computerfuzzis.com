@@ -20,7 +20,7 @@ Vor dem ersten Deployment muss im Repository unter **Settings → Pages → Sour
 Solange die neue Domain noch nicht mit GitHub Pages verbunden ist, lautet die Vorschauadresse:
 
 ```text
-https://itmitalles-markus.github.io/computerfuzzi.de/
+https://itmitalles-markus.github.io/computerfuzzies.com/
 ```
 
 Die Domain `computerfuzzies.com` wird in den Pages-Einstellungen und beim DNS-Anbieter verbunden.

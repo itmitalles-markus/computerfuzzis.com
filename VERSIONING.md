@@ -24,7 +24,7 @@ Vor Version `1.0.0` darf sich die Struktur noch deutlich weiterentwickeln.
 ## Eine frühere Version ansehen
 
 Alle Versionen und die zugehörigen Hinweise stehen unter
-[GitHub Releases](https://github.com/itmitalles-markus/computerfuzzi.de/releases).
+[GitHub Releases](https://github.com/itmitalles-markus/computerfuzzies.com/releases).
 
 Eine Datei aus einer Version im Terminal anzeigen:
 
@@ -41,7 +41,7 @@ git diff v0.1.0..main
 Die komplette Version gefahrlos in einen separaten Ordner auschecken:
 
 ```bash
-git worktree add ../computerfuzzi-v0.1.0 v0.1.0
+git worktree add ../computerfuzzies-v0.1.0 v0.1.0
 ```
 
 Der aktuelle Arbeitsordner und `main` bleiben dabei unverändert.
