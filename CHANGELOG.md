@@ -8,6 +8,24 @@ die Versionsnummern folgen [Semantic Versioning](https://semver.org/lang/de/).
 
 Hier sammeln wir Änderungen, die noch keiner veröffentlichten Version zugeordnet sind.
 
+## [0.4.0] – 2026-09-10
+
+### Hinzugefügt
+
+- Impressum mit den Angaben des Anbieters Markus Sukhaboon
+- Datenschutzerklärung für Hosting, Kontaktaufnahme und Farbschema-Speicherung
+- direkte Kontaktmöglichkeit per E-Mail
+- modularer Wissensbereich zu VoIP und PBX mit fünf animierten Alltagsszenarien
+- Kundennutzen und technische Voraussetzungen der IP-Telefonie verständlich erklärt
+
+### Geändert
+
+- Hauptnavigation auf die üblichen Firmenbereiche Start, Leistungen, Lösungen, Über uns und Kontakt umgestellt
+- Geschäftsführerangabe aus der zentralen Positionierung entfernt und dezent im Unternehmensbereich platziert
+- Leistungsspektrum von kleinen Aufgaben bis zu komplexen Projekten klarer formuliert
+- rechtliche Links auf Start- und Fehlerseite ergänzt
+- Hauptnavigation und Startseite um den Bereich „Wissen“ ergänzt
+
 ## [0.3.0] – 2026-09-10
 
 ### Hinzugefügt
@@ -47,7 +65,8 @@ Hier sammeln wir Änderungen, die noch keiner veröffentlichten Version zugeordn
 - automatisches, kostenloses Deployment auf GitHub Pages
 - HTTPS-Vorschau ohne eigene DNS-Konfiguration
 
-[Unveröffentlicht]: https://github.com/itmitalles-markus/computerfuzzi.de/compare/v0.3.0...HEAD
+[Unveröffentlicht]: https://github.com/itmitalles-markus/computerfuzzi.de/compare/v0.4.0...HEAD
+[0.4.0]: https://github.com/itmitalles-markus/computerfuzzi.de/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/itmitalles-markus/computerfuzzi.de/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/itmitalles-markus/computerfuzzi.de/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/itmitalles-markus/computerfuzzi.de/releases/tag/v0.1.0

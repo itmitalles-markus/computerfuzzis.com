@@ -32,6 +32,9 @@ keine `CNAME`-Datei im Repository erforderlich.
 - semantisches HTML
 - responsives CSS mit Hell-/Dunkelmodus
 - kleines, optionales JavaScript ohne Framework
+- datensparsame Umsetzung ohne Tracking, externe Schriften oder Kontaktformular
+- Impressum und Datenschutzerklärung für den aktuellen Betrieb über GitHub Pages
+- modularer VoIP-/PBX-Erklärbereich mit zugänglichen Einzelszenarien
 - eigene 404-Seite und SVG-Favicon
 - automatisches Deployment mit GitHub Pages
 

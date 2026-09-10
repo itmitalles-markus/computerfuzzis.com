@@ -1,0 +1,393 @@
+.header-actions nav a[aria-current="page"] {
+  color: var(--text);
+}
+
+.pbx-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(30rem, 1.05fr);
+  align-items: center;
+  gap: clamp(3rem, 8vw, 7rem);
+  padding-block: clamp(5rem, 10vw, 8rem);
+}
+
+.pbx-hero h1 {
+  max-width: 12ch;
+  font-size: clamp(3.5rem, 7vw, 6.8rem);
+}
+
+.pbx-overview {
+  display: grid;
+  grid-template-columns: minmax(6rem, 1fr) auto minmax(8rem, 1.2fr) auto minmax(6rem, 1fr);
+  align-items: center;
+  gap: clamp(0.6rem, 2vw, 1.2rem);
+  padding: clamp(1.2rem, 4vw, 2rem);
+  color: var(--terminal-text);
+  background: var(--terminal);
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  transform: rotate(1deg);
+}
+
+.overview-node {
+  display: grid;
+  justify-items: center;
+  gap: 0.45rem;
+  min-width: 0;
+  text-align: center;
+}
+
+.overview-node strong,
+.overview-node small {
+  display: block;
+}
+
+.overview-node strong {
+  font-size: 0.9rem;
+}
+
+.overview-node small {
+  color: #aeb4a4;
+  font-size: 0.72rem;
+}
+
+.overview-icon {
+  display: grid;
+  width: clamp(3rem, 6vw, 4rem);
+  aspect-ratio: 1;
+  place-items: center;
+  color: var(--accent-ink);
+  background: var(--accent);
+  border-radius: 50%;
+  font: 700 clamp(0.72rem, 1.5vw, 0.9rem) "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
+.overview-node-main .overview-icon {
+  border-radius: 0.7rem;
+  transform: rotate(-3deg);
+}
+
+.overview-route {
+  color: var(--accent);
+  font-size: 1.5rem;
+  animation: route-nudge 1.8s ease-in-out 2;
+}
+
+.pbx-explainer,
+.pbx-reality {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(20rem, 1.2fr);
+  gap: clamp(3rem, 10vw, 9rem);
+  padding-block: clamp(5rem, 9vw, 8rem);
+  border-top: 1px solid var(--line);
+}
+
+.pbx-explainer h2,
+.pbx-reality h2,
+.scenario-heading h2 {
+  max-width: 15ch;
+  margin: 0;
+  font-size: clamp(2.3rem, 5vw, 4.6rem);
+  font-weight: 600;
+  letter-spacing: -0.06em;
+  line-height: 1;
+}
+
+.pbx-explainer-copy,
+.pbx-reality > div:last-child {
+  align-self: end;
+}
+
+.pbx-explainer-copy p,
+.pbx-reality p,
+.scenario-heading > p:last-child {
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.pbx-explainer-copy .lead {
+  color: var(--text);
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.scenario-section {
+  padding-block: clamp(5rem, 9vw, 8rem);
+  border-top: 1px solid var(--line);
+}
+
+.scenario-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.65fr);
+  align-items: end;
+  gap: 1.5rem 4rem;
+  margin-bottom: clamp(3rem, 7vw, 6rem);
+}
+
+.scenario-heading .section-label {
+  grid-column: 1 / -1;
+  margin-bottom: 0;
+}
+
+.scenario-heading > p:last-child {
+  margin: 0;
+}
+
+.pbx-scenario {
+  display: grid;
+  grid-template-columns: minmax(17rem, 0.7fr) minmax(0, 1.3fr);
+  gap: clamp(2.5rem, 7vw, 6rem);
+  padding-block: clamp(3rem, 7vw, 5.5rem);
+  border-top: 1px solid var(--line);
+}
+
+.scenario-copy {
+  align-self: center;
+}
+
+.scenario-number {
+  color: var(--accent);
+  font: 0.75rem "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
+.scenario-copy h3 {
+  margin: 1.5rem 0 1rem;
+  font-size: clamp(1.6rem, 3vw, 2.3rem);
+  letter-spacing: -0.045em;
+  line-height: 1.08;
+}
+
+.scenario-copy > p {
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.scenario-copy .scenario-benefit {
+  margin-top: 1.5rem;
+  color: var(--text);
+}
+
+.scenario-replay {
+  margin-top: 0.75rem;
+  padding: 0.65rem 0;
+  color: var(--muted);
+  background: transparent;
+  border: 0;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+  cursor: pointer;
+}
+
+.scenario-replay:hover {
+  color: var(--text);
+}
+
+.scenario-replay:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--accent) 55%, transparent);
+  outline-offset: 4px;
+}
+
+.scenario-demo {
+  align-self: center;
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 0.9rem;
+}
+
+.scenario-flow {
+  display: grid;
+  grid-template-columns: minmax(5.5rem, 1fr) auto minmax(7rem, 1.15fr) auto minmax(7rem, 1.15fr);
+  align-items: center;
+  gap: clamp(0.45rem, 1.5vw, 0.9rem);
+  min-height: 10rem;
+}
+
+.flow-node,
+.flow-stack span {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 0.45rem;
+  min-width: 0;
+  min-height: 4.8rem;
+  padding: 0.7rem;
+  text-align: center;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 0.6rem;
+}
+
+.flow-node > span {
+  color: var(--accent);
+  font: 700 0.8rem "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
+.flow-node strong,
+.flow-stack span {
+  font-size: clamp(0.72rem, 1.2vw, 0.84rem);
+}
+
+.flow-node-main {
+  background: color-mix(in srgb, var(--accent) 8%, var(--surface));
+}
+
+.flow-route {
+  color: var(--muted);
+  font-size: 1.25rem;
+}
+
+.flow-stack {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.flow-stack span {
+  min-height: auto;
+  padding-block: 0.5rem;
+}
+
+.flow-stack-queue span:first-child {
+  color: var(--accent-ink);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.scenario-steps {
+  display: grid;
+  gap: 0.55rem;
+  margin: 1.5rem 0 0;
+  padding: 1.25rem 0 0 1.4rem;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+
+.js [data-pbx-scenario] [data-stage] {
+  opacity: 0.32;
+  transition: opacity 280ms ease, transform 280ms ease, border-color 280ms ease, background-color 280ms ease;
+}
+
+.js [data-pbx-scenario] [data-stage].is-complete,
+.js [data-pbx-scenario] [data-stage].is-current {
+  opacity: 1;
+}
+
+.js [data-pbx-scenario] .flow-node.is-current,
+.js [data-pbx-scenario] .flow-stack.is-current span {
+  background: color-mix(in srgb, var(--accent) 15%, var(--surface));
+  border-color: color-mix(in srgb, var(--accent) 65%, var(--line));
+  animation: scenario-pop 420ms ease-out 1;
+}
+
+.js [data-pbx-scenario] .flow-route.is-current {
+  color: var(--accent);
+  transform: translateX(0.2rem);
+}
+
+.js [data-pbx-scenario] .scenario-steps .is-current {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.pbx-benefits {
+  padding-top: clamp(5rem, 9vw, 8rem);
+}
+
+.pbx-reality {
+  margin-bottom: 1rem;
+}
+
+@keyframes route-nudge {
+  50% { transform: translateX(0.22rem); }
+}
+
+@keyframes scenario-pop {
+  0% { transform: scale(0.97); }
+  70% { transform: scale(1.025); }
+  100% { transform: scale(1); }
+}
+
+@media (max-width: 900px) {
+  .pbx-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .pbx-overview {
+    transform: none;
+  }
+
+  .pbx-scenario {
+    grid-template-columns: 1fr;
+  }
+
+  .scenario-copy {
+    max-width: 38rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .pbx-explainer,
+  .pbx-reality,
+  .scenario-heading {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .scenario-heading .section-label {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 540px) {
+  .pbx-overview,
+  .scenario-flow {
+    grid-template-columns: 1fr;
+    justify-items: stretch;
+  }
+
+  .pbx-overview {
+    width: min(100%, 22rem);
+    margin-inline: auto;
+  }
+
+  .overview-route,
+  .flow-route {
+    justify-self: center;
+    transform: rotate(90deg);
+  }
+
+  .js [data-pbx-scenario] .flow-route.is-current {
+    transform: rotate(90deg) translateX(0.2rem);
+  }
+
+  .scenario-flow {
+    gap: 0.55rem;
+  }
+
+  .flow-node,
+  .flow-stack {
+    width: min(100%, 18rem);
+    justify-self: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .overview-route {
+    animation: none;
+  }
+}

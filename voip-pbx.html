@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4f1e8" />
+    <meta
+      name="description"
+      content="Einfach erklärt: Wie eine PBX-Telefonanlage über VoIP Anrufe verteilt, Teams verbindet und Erreichbarkeit verbessert."
+    />
+    <meta property="og:title" content="VoIP &amp; PBX einfach erklärt – computerfuzzies.com" />
+    <meta
+      property="og:description"
+      content="Fünf anschauliche Szenarien zeigen, was eine moderne Telefonanlage im Alltag leisten kann."
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:url" content="https://computerfuzzies.com/voip-pbx.html" />
+    <link rel="canonical" href="https://computerfuzzies.com/voip-pbx.html" />
+    <title>VoIP &amp; PBX einfach erklärt – computerfuzzies.com</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="voip-pbx.css" />
+    <script src="script.js" defer></script>
+    <script src="voip-pbx.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="computerfuzzies.com – Startseite">
+        <span class="brand-mark" aria-hidden="true">cf</span>
+        <span>computerfuzzies<span class="accent">.com</span></span>
+      </a>
+
+      <div class="header-actions">
+        <nav id="site-navigation" aria-label="Hauptnavigation">
+          <a href="./#start">Start</a>
+          <a href="./#leistungen">Leistungen</a>
+          <a href="./#loesungen">Lösungen</a>
+          <a href="voip-pbx.html" aria-current="page">Wissen</a>
+          <a href="./#ueber-uns">Über uns</a>
+          <a href="./#kontakt">Kontakt</a>
+        </nav>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Menü öffnen"
+          aria-controls="site-navigation"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <button class="theme-toggle" type="button" aria-label="Farbschema wechseln">
+          <svg class="sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41" />
+          </svg>
+          <svg class="moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="inhalt">
+      <section class="pbx-hero" aria-labelledby="pbx-title">
+        <div>
+          <p class="eyebrow"><span class="status-dot"></span> Kundenwissen · VoIP &amp; PBX</p>
+          <h1 id="pbx-title">Die Telefonanlage,<br />die <em>mitdenkt.</em></h1>
+          <p class="intro">
+            PBX steht für „Private Branch Exchange“ – sinngemäß die eigene
+            Telefonzentrale. Über VoIP verbindet sie Rufnummern, Menschen und
+            Geräte und entscheidet, wie ein Anruf am besten ans Ziel kommt.
+          </p>
+          <a class="button" href="#szenarien">
+            Beispiele ansehen
+            <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="pbx-overview" role="img" aria-label="Ein Anruf läuft über das Telefonnetz zur PBX und von dort zum passenden Team">
+          <div class="overview-node">
+            <span class="overview-icon" aria-hidden="true">☎</span>
+            <strong>Kunde</strong>
+            <small>ruft an</small>
+          </div>
+          <span class="overview-route" aria-hidden="true">→</span>
+          <div class="overview-node overview-node-main">
+            <span class="overview-icon" aria-hidden="true">PBX</span>
+            <strong>Telefonanlage</strong>
+            <small>ordnet &amp; verteilt</small>
+          </div>
+          <span class="overview-route" aria-hidden="true">→</span>
+          <div class="overview-node">
+            <span class="overview-icon" aria-hidden="true">✓</span>
+            <strong>Team</strong>
+            <small>nimmt ab</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="pbx-explainer" aria-labelledby="explainer-title">
+        <div>
+          <p class="section-label">In 30 Sekunden</p>
+          <h2 id="explainer-title">PBX ist der Verkehrsleiter für Anrufe.</h2>
+        </div>
+        <div class="pbx-explainer-copy">
+          <p class="lead">
+            Früher stand die Telefonanlage als Kasten im Keller. Heute kann sie
+            als Software vor Ort, im Rechenzentrum oder als Cloud-Dienst laufen.
+          </p>
+          <p>
+            VoIP bedeutet „Voice over IP“: Sprache wird über ein Datennetz
+            übertragen. Die PBX legt anschließend fest, welche Person, Gruppe,
+            Ansage oder Mailbox einen Anruf erhält. Für Anrufende bleibt es ein
+            ganz normales Telefongespräch.
+          </p>
+        </div>
+      </section>
+
+      <section class="scenario-section" id="szenarien" aria-labelledby="scenarios-title">
+        <div class="scenario-heading">
+          <p class="section-label">Typische Situationen</p>
+          <h2 id="scenarios-title">Fünf Szenarien aus dem Arbeitsalltag.</h2>
+          <p>Jede Szene zeigt erst den Ablauf und dann den konkreten Vorteil.</p>
+        </div>
+
+        <article class="pbx-scenario" data-pbx-scenario>
+          <div class="scenario-copy">
+            <span class="scenario-number">01</span>
+            <h3>Ein Anruf erreicht das richtige Team</h3>
+            <p>
+              Die zentrale Rufnummer bleibt einfach. Die Anlage erkennt die
+              gewählte Auswahl und verteilt den Anruf passend.
+            </p>
+            <p class="scenario-benefit"><strong>Vorteil:</strong> Eine Nummer nach außen, klare Zuständigkeiten nach innen.</p>
+            <button class="scenario-replay" type="button">Animation wiederholen</button>
+          </div>
+          <div class="scenario-demo">
+            <div class="scenario-flow" role="img" aria-label="Kunde ruft an, die PBX prüft die Auswahl und verbindet mit dem passenden Team">
+              <div class="flow-node" data-stage="1"><span aria-hidden="true">☎</span><strong>Anruf</strong></div>
+              <span class="flow-route" data-stage="2" aria-hidden="true">→</span>
+              <div class="flow-node flow-node-main" data-stage="2"><span aria-hidden="true">PBX</span><strong>Auswahl</strong></div>
+              <span class="flow-route" data-stage="3" aria-hidden="true">→</span>
+              <div class="flow-stack" data-stage="3">
+                <span>Vertrieb</span><span>Service</span><span>Technik</span>
+              </div>
+            </div>
+            <ol class="scenario-steps">
+              <li data-stage="1">Der Kunde wählt die zentrale Nummer.</li>
+              <li data-stage="2">Die PBX erkennt Auswahl und Regeln.</li>
+              <li data-stage="3">Das zuständige Team klingelt.</li>
+            </ol>
+            <p class="visually-hidden" data-scenario-status aria-live="polite"></p>
+          </div>
+        </article>
+
+        <article class="pbx-scenario" data-pbx-scenario>
+          <div class="scenario-copy">
+            <span class="scenario-number">02</span>
+            <h3>Öffnungszeiten entscheiden automatisch</h3>
+            <p>
+              Morgens geht der Anruf ins Team, abends zur Mailbox oder zum
+              Bereitschaftsdienst – ohne tägliches Umschalten.
+            </p>
+            <p class="scenario-benefit"><strong>Vorteil:</strong> Jeder Anruf bekommt zur richtigen Zeit die richtige Antwort.</p>
+            <button class="scenario-replay" type="button">Animation wiederholen</button>
+          </div>
+          <div class="scenario-demo">
+            <div class="scenario-flow" role="img" aria-label="Die PBX prüft die Öffnungszeit und leitet zum Team oder zur Mailbox">
+              <div class="flow-node" data-stage="1"><span aria-hidden="true">☎</span><strong>Anruf</strong></div>
+              <span class="flow-route" data-stage="2" aria-hidden="true">→</span>
+              <div class="flow-node flow-node-main" data-stage="2"><span aria-hidden="true">◷</span><strong>Zeitplan</strong></div>
+              <span class="flow-route" data-stage="3" aria-hidden="true">→</span>
+              <div class="flow-stack" data-stage="3">
+                <span>Geöffnet: Team</span><span>Geschlossen: Mailbox</span>
+              </div>
+            </div>
+            <ol class="scenario-steps">
+              <li data-stage="1">Ein Anruf kommt an.</li>
+              <li data-stage="2">Die PBX prüft Tag und Uhrzeit.</li>
+              <li data-stage="3">Die passende Route wird gewählt.</li>
+            </ol>
+            <p class="visually-hidden" data-scenario-status aria-live="polite"></p>
+          </div>
+        </article>
+
+        <article class="pbx-scenario" data-pbx-scenario>
+          <div class="scenario-copy">
+            <span class="scenario-number">03</span>
+            <h3>Besetzt wird zur geordneten Warteschlange</h3>
+            <p>
+              Sind alle im Gespräch, wartet der nächste Anruf nicht im Ungewissen.
+              Ansagen informieren, die Reihenfolge bleibt erhalten.
+            </p>
+            <p class="scenario-benefit"><strong>Vorteil:</strong> Weniger verlorene Anrufe und ein ruhigerer Ablauf im Team.</p>
+            <button class="scenario-replay" type="button">Animation wiederholen</button>
+          </div>
+          <div class="scenario-demo">
+            <div class="scenario-flow" role="img" aria-label="Mehrere Anrufe warten geordnet und werden mit dem nächsten freien Platz verbunden">
+              <div class="flow-stack flow-stack-queue" data-stage="1">
+                <span>Anruf 1</span><span>Anruf 2</span><span>Anruf 3</span>
+              </div>
+              <span class="flow-route" data-stage="2" aria-hidden="true">→</span>
+              <div class="flow-node flow-node-main" data-stage="2"><span aria-hidden="true">≡</span><strong>Warteschlange</strong></div>
+              <span class="flow-route" data-stage="3" aria-hidden="true">→</span>
+              <div class="flow-node" data-stage="3"><span aria-hidden="true">✓</span><strong>Freier Platz</strong></div>
+            </div>
+            <ol class="scenario-steps">
+              <li data-stage="1">Mehrere Menschen rufen gleichzeitig an.</li>
+              <li data-stage="2">Die PBX hält Reihenfolge und informiert.</li>
+              <li data-stage="3">Der nächste freie Platz übernimmt.</li>
+            </ol>
+            <p class="visually-hidden" data-scenario-status aria-live="polite"></p>
+          </div>
+        </article>
+
+        <article class="pbx-scenario" data-pbx-scenario>
+          <div class="scenario-copy">
+            <span class="scenario-number">04</span>
+            <h3>Die Nebenstelle reist einfach mit</h3>
+            <p>
+              Tischtelefon, Notebook oder Smartphone können dieselbe geschäftliche
+              Nebenstelle nutzen – im Büro, zu Hause oder unterwegs.
+            </p>
+            <p class="scenario-benefit"><strong>Vorteil:</strong> Erreichbar arbeiten, ohne private Rufnummern weiterzugeben.</p>
+            <button class="scenario-replay" type="button">Animation wiederholen</button>
+          </div>
+          <div class="scenario-demo">
+            <div class="scenario-flow" role="img" aria-label="Eine Nebenstelle klingelt auf Tischtelefon, Notebook und Smartphone">
+              <div class="flow-node" data-stage="1"><span aria-hidden="true">☎</span><strong>Nebenstelle</strong></div>
+              <span class="flow-route" data-stage="2" aria-hidden="true">→</span>
+              <div class="flow-node flow-node-main" data-stage="2"><span aria-hidden="true">PBX</span><strong>Identität</strong></div>
+              <span class="flow-route" data-stage="3" aria-hidden="true">→</span>
+              <div class="flow-stack" data-stage="3">
+                <span>Tischtelefon</span><span>Notebook</span><span>Smartphone</span>
+              </div>
+            </div>
+            <ol class="scenario-steps">
+              <li data-stage="1">Die geschäftliche Nebenstelle wird angerufen.</li>
+              <li data-stage="2">Die PBX kennt die angemeldeten Geräte.</li>
+              <li data-stage="3">Die erlaubten Geräte klingeln.</li>
+            </ol>
+            <p class="visually-hidden" data-scenario-status aria-live="polite"></p>
+          </div>
+        </article>
+
+        <article class="pbx-scenario" data-pbx-scenario>
+          <div class="scenario-copy">
+            <span class="scenario-number">05</span>
+            <h3>Ein Ausfall muss nicht das Ende sein</h3>
+            <p>
+              Mit vorbereiteten Ersatzwegen können Anrufe bei einer Störung an
+              einen anderen Standort oder ein Mobiltelefon gehen.
+            </p>
+            <p class="scenario-benefit"><strong>Vorteil:</strong> Geplante Ausfallsicherheit statt Improvisation im Ernstfall.</p>
+            <button class="scenario-replay" type="button">Animation wiederholen</button>
+          </div>
+          <div class="scenario-demo">
+            <div class="scenario-flow" role="img" aria-label="Bei einer Störung verwendet die PBX einen vorbereiteten Ersatzweg">
+              <div class="flow-node" data-stage="1"><span aria-hidden="true">!</span><strong>Störung</strong></div>
+              <span class="flow-route" data-stage="2" aria-hidden="true">→</span>
+              <div class="flow-node flow-node-main" data-stage="2"><span aria-hidden="true">PBX</span><strong>Regel greift</strong></div>
+              <span class="flow-route" data-stage="3" aria-hidden="true">→</span>
+              <div class="flow-stack" data-stage="3">
+                <span>Ersatzstandort</span><span>Mobiltelefon</span>
+              </div>
+            </div>
+            <ol class="scenario-steps">
+              <li data-stage="1">Ein vorgesehener Weg ist nicht erreichbar.</li>
+              <li data-stage="2">Die vorbereitete Ausfallregel wird aktiv.</li>
+              <li data-stage="3">Anrufe gehen über den Ersatzweg weiter.</li>
+            </ol>
+            <p class="visually-hidden" data-scenario-status aria-live="polite"></p>
+          </div>
+        </article>
+      </section>
+
+      <section class="principles pbx-benefits" aria-labelledby="benefits-title">
+        <p class="section-label" id="benefits-title">Was dadurch besser wird</p>
+        <div class="principle-grid">
+          <article>
+            <span>01</span>
+            <h2>Erreichbarkeit</h2>
+            <p>Anrufe landen nach klaren Regeln dort, wo sie beantwortet werden können.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h2>Flexibilität</h2>
+            <p>Nebenstellen, Geräte und Teams lassen sich an veränderte Arbeit anpassen.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h2>Überblick</h2>
+            <p>Zuständigkeiten und Abläufe werden planbar statt vom Zufall abhängig.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="pbx-reality" aria-labelledby="reality-title">
+        <div>
+          <p class="section-label">Gut zu wissen</p>
+          <h2 id="reality-title">Eine gute Lösung plant auch den Ernstfall.</h2>
+        </div>
+        <div>
+          <p>
+            VoIP-Telefonie hängt von Netzwerk, Internetzugang und Stromversorgung
+            ab. Deshalb gehören Verbindungsqualität, Absicherung, Notrufkonzept,
+            Ersatzwege und klare Rechte von Anfang an in die Planung.
+          </p>
+          <p>
+            Welche Funktionen tatsächlich sinnvoll sind, hängt vom Betrieb ab.
+            Die beste Telefonanlage ist nicht die mit den meisten Schaltern,
+            sondern die, deren Ablauf im Alltag verstanden wird.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact" aria-labelledby="pbx-contact-title">
+        <p class="section-label">Nächster Schritt</p>
+        <div class="contact-row">
+          <div>
+            <h2 id="pbx-contact-title">Welche Telefonie passt<br />zu deinem <em>Betrieb?</em></h2>
+            <p class="contact-note">Wir schauen zuerst auf den Ablauf – und dann auf die Technik.</p>
+          </div>
+          <a class="button" href="mailto:markus.sukhaboon@gmail.com?subject=Frage%20zu%20VoIP%20und%20PBX">
+            Unverbindlich fragen
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span data-current-year>2026</span> computerfuzzies.com · v<span data-version>0.4.0</span></p>
+      <p>Wissen, das Technik verständlich macht.</p>
+      <nav class="footer-nav" aria-label="Rechtliche Hinweise">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </nav>
+    </footer>
+  </body>
+</html>

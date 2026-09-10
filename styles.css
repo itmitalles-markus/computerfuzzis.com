@@ -538,12 +538,79 @@ h1 em {
   flex: none;
 }
 
-footer .version {
+.contact-note {
+  margin: 1.5rem 0 0;
+  color: #bdc3b4;
+  line-height: 1.6;
+}
+
+.contact-note a {
+  color: var(--terminal-text);
+  font-weight: 600;
+  text-underline-offset: 0.25rem;
+}
+
+.legal-page {
+  width: min(48rem, 100%);
+  padding-block: clamp(4.5rem, 10vw, 8rem);
+}
+
+.legal-page h1 {
+  max-width: none;
+  margin-bottom: clamp(3rem, 7vw, 5rem);
+  font-size: clamp(3.5rem, 8vw, 6.5rem);
+  line-height: 0.95;
+}
+
+.legal-page section {
+  padding-block: 2rem;
+  border-top: 1px solid var(--line);
+}
+
+.legal-page h2 {
+  margin: 0 0 1rem;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  letter-spacing: -0.035em;
+}
+
+.legal-page p,
+.legal-page address {
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.legal-page address {
+  font-style: normal;
+}
+
+.legal-page a,
+footer a {
+  text-underline-offset: 0.25rem;
+}
+
+.legal-page .legal-intro {
+  margin: 0 0 3rem;
+  color: var(--text);
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+}
+
+.legal-page .legal-note {
+  margin: 2rem 0 0;
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.78rem;
+}
+
+.legal-page code {
+  padding: 0.12rem 0.3rem;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 0.25rem;
 }
 
 footer {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 1rem;
   padding-block: 2rem;
@@ -554,6 +621,16 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-nav a[aria-current="page"] {
+  color: var(--text);
+  font-weight: 700;
 }
 
 @keyframes blink {
@@ -637,6 +714,7 @@ footer p {
   }
 
   footer {
+    align-items: flex-start;
     flex-direction: column;
   }
 }

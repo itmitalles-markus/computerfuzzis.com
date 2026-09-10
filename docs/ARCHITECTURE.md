@@ -22,6 +22,9 @@ den Farbschema-Schalter, das mobile Menü und die automatisch aktuelle Jahreszah
 
 Schriften, Darstellung und Favicon kommen aus dem Repository. Die Website bindet
 keine Tracker, Analysewerkzeuge oder Drittanbieter-CDNs ein und setzt selbst keine Cookies.
+Das gewählte Farbschema wird ausschließlich lokal im Browser gespeichert. Die
+Datenschutzerklärung dokumentiert außerdem die technisch notwendige Verarbeitung
+durch das Hosting über GitHub Pages.
 
 ### GitHub Pages
 
@@ -38,7 +41,12 @@ zugeordnet; der Workflow benötigt dafür keine `CNAME`-Datei.
 ├── assets/                      # lokale Medien und Icons
 ├── docs/                        # technische Dokumentation
 ├── 404.html                     # Fehlerseite
+├── datenschutz.html             # Datenschutzhinweise
+├── impressum.html               # Anbieterkennzeichnung
 ├── index.html                   # Inhalt und Struktur
+├── voip-pbx.html                # modularer PBX-Erklärbereich
+├── voip-pbx.css                 # Gestaltung der PBX-Szenarien
+├── voip-pbx.js                  # progressive Szenario-Animationen
 ├── styles.css                   # Gestaltung und responsive Regeln
 ├── script.js                    # optionale Interaktionen
 ├── CHANGELOG.md                 # sichtbare Änderungen pro Version
@@ -49,6 +57,8 @@ zugeordnet; der Workflow benötigt dafür keine `CNAME`-Datei.
 ## Leitplanken für Änderungen
 
 - Inhalte bleiben auch ohne JavaScript erreichbar.
+- Erklärmodule enthalten ihre vollständige Aussage im HTML; Animationen sind
+  progressive Ergänzungen und respektieren reduzierte Bewegung.
 - Neue Bibliotheken brauchen einen konkreten Nutzen, nicht nur Neuheitswert.
 - Keine Geheimnisse, Tokens oder personenbezogenen Daten ins Repository schreiben.
 - Vor jeder Veröffentlichung interne Links und das Pages-Deployment prüfen.
