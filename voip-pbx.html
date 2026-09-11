@@ -123,7 +123,7 @@
         <div class="scenario-heading">
           <p class="section-label">Typische Situationen</p>
           <h2 id="scenarios-title">Fünf Szenarien aus dem Arbeitsalltag.</h2>
-          <p>Jede Szene zeigt erst den Ablauf und dann den konkreten Vorteil.</p>
+          <p>Verfolge einen Anruf vom Anliegen bis zum Ziel. Mit dem Drehknopf am Rand wählst du die Ansicht.</p>
         </div>
 
         <article class="pbx-scenario" data-pbx-scenario>
@@ -135,23 +135,46 @@
               gewählte Auswahl und verteilt den Anruf passend.
             </p>
             <p class="scenario-benefit"><strong>Vorteil:</strong> Eine Nummer nach außen, klare Zuständigkeiten nach innen.</p>
-            <button class="scenario-replay" type="button">Animation wiederholen</button>
           </div>
-          <div class="scenario-demo">
-            <div class="scenario-flow" role="img" aria-label="Kunde ruft an, die PBX prüft die Auswahl und verbindet mit dem passenden Team">
-              <div class="flow-node" data-stage="1"><span aria-hidden="true">☎</span><strong>Anruf</strong></div>
-              <span class="flow-route" data-stage="2" aria-hidden="true">→</span>
-              <div class="flow-node flow-node-main" data-stage="2"><span aria-hidden="true">PBX</span><strong>Auswahl</strong></div>
-              <span class="flow-route" data-stage="3" aria-hidden="true">→</span>
-              <div class="flow-stack" data-stage="3">
-                <span>Vertrieb</span><span>Service</span><span>Technik</span>
+          <div class="scenario-demo" data-scenario="team">
+            <div class="scenario-toolbar">
+              <div class="scenario-choice" role="group" aria-label="Anliegen wählen" hidden>
+                <button type="button" data-intent="info" aria-pressed="true">Info</button>
+                <button type="button" data-intent="support" aria-pressed="false">Support</button>
+              </div>
+              <button class="scenario-pivot" type="button" aria-label="Ansicht drehen: senkrechte Darstellung" aria-pressed="false" aria-controls="flow-team" title="Ansicht drehen" hidden>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 8A8 8 0 0 0 6 5M20 3v5h-5" /><rect x="7" y="9" width="8" height="11" rx="1.5" /></svg>
+                <span>Ansicht drehen</span>
+              </button>
+            </div>
+            <div class="scenario-flow" id="flow-team" role="img" aria-label="Ein Anrufer mit einer Frage wählt Info. Die PBX verbindet ihn mit der Nebenstelle 10 für Auskünfte.">
+              <div class="flow-node flow-caller" data-stage="1">
+                <span class="flow-label">Anrufer</span>
+                <strong data-caller-intent>Info</strong>
+                <small data-caller-request>„Ich habe eine Frage.“</small>
+              </div>
+              <span class="flow-route" data-stage="2" aria-hidden="true"><span class="flow-packet"></span></span>
+              <div class="flow-node flow-node-main" data-stage="3">
+                <span class="flow-label">PBX</span>
+                <strong>Auswahl</strong>
+                <small data-pbx-detail>Taste 1 · Info</small>
+              </div>
+              <span class="flow-route" data-stage="4" aria-hidden="true"><span class="flow-packet"></span></span>
+              <div class="flow-node flow-destination" data-stage="5">
+                <span class="flow-label">Nebenstelle</span>
+                <strong data-destination-name>Info</strong>
+                <small data-destination-detail>10 · Auskunft</small>
               </div>
             </div>
             <ol class="scenario-steps">
-              <li data-stage="1">Der Kunde wählt die zentrale Nummer.</li>
-              <li data-stage="2">Die PBX erkennt Auswahl und Regeln.</li>
-              <li data-stage="3">Das zuständige Team klingelt.</li>
+              <li data-stage="1">Der Anrufer möchte eine Auskunft.</li>
+              <li data-stage="3">Die PBX folgt der Auswahl „Info“.</li>
+              <li data-stage="5">Nebenstelle 10 · Info nimmt den Anruf an.</li>
             </ol>
+            <div class="scenario-footer">
+              <span class="scenario-state" data-playback-state aria-hidden="true">Anliegen → Telefonanlage → Ziel</span>
+              <button class="scenario-replay" type="button" aria-label="Animation erneut abspielen" title="Animation erneut abspielen" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16l13-8Z" /></svg> Abspielen</button>
+            </div>
             <p class="visually-hidden" data-scenario-status aria-live="polite"></p>
           </div>
         </article>
@@ -165,23 +188,43 @@
               Bereitschaftsdienst – ohne tägliches Umschalten.
             </p>
             <p class="scenario-benefit"><strong>Vorteil:</strong> Jeder Anruf bekommt zur richtigen Zeit die richtige Antwort.</p>
-            <button class="scenario-replay" type="button">Animation wiederholen</button>
           </div>
-          <div class="scenario-demo">
-            <div class="scenario-flow" role="img" aria-label="Die PBX prüft die Öffnungszeit und leitet zum Team oder zur Mailbox">
-              <div class="flow-node" data-stage="1"><span aria-hidden="true">☎</span><strong>Anruf</strong></div>
-              <span class="flow-route" data-stage="2" aria-hidden="true">→</span>
-              <div class="flow-node flow-node-main" data-stage="2"><span aria-hidden="true">◷</span><strong>Zeitplan</strong></div>
-              <span class="flow-route" data-stage="3" aria-hidden="true">→</span>
-              <div class="flow-stack" data-stage="3">
-                <span>Geöffnet: Team</span><span>Geschlossen: Mailbox</span>
+          <div class="scenario-demo" data-scenario="hours">
+            <div class="scenario-toolbar">
+              <span class="scenario-demo-label">Ein Anruf, ein klarer Weg</span>
+              <button class="scenario-pivot" type="button" aria-label="Ansicht drehen: senkrechte Darstellung" aria-pressed="false" aria-controls="flow-hours" title="Ansicht drehen" hidden>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 8A8 8 0 0 0 6 5M20 3v5h-5" /><rect x="7" y="9" width="8" height="11" rx="1.5" /></svg>
+                <span>Ansicht drehen</span>
+              </button>
+            </div>
+            <div class="scenario-flow" id="flow-hours" role="img" aria-label="Ein Anrufer möchte eine Auskunft. Um 18:30 Uhr ist geschlossen. Die PBX leitet ihn zur Mailbox des Info-Teams.">
+              <div class="flow-node flow-caller" data-stage="1">
+                <span class="flow-label">Anrufer</span>
+                <strong data-caller-intent>Info</strong>
+                <small data-caller-request>„Noch jemand da?“</small>
+              </div>
+              <span class="flow-route" data-stage="2" aria-hidden="true"><span class="flow-packet"></span></span>
+              <div class="flow-node flow-node-main" data-stage="3">
+                <span class="flow-label">PBX</span>
+                <strong>Zeitplan</strong>
+                <small data-pbx-detail>18:30 · geschlossen</small>
+              </div>
+              <span class="flow-route" data-stage="4" aria-hidden="true"><span class="flow-packet"></span></span>
+              <div class="flow-node flow-destination" data-stage="5">
+                <span class="flow-label">Mailbox</span>
+                <strong data-destination-name>Info</strong>
+                <small data-destination-detail>Nachricht hinterlassen</small>
               </div>
             </div>
             <ol class="scenario-steps">
-              <li data-stage="1">Ein Anruf kommt an.</li>
-              <li data-stage="2">Die PBX prüft Tag und Uhrzeit.</li>
-              <li data-stage="3">Die passende Route wird gewählt.</li>
+              <li data-stage="1">Der Anrufer hat eine Frage nach Feierabend.</li>
+              <li data-stage="3">Die PBX prüft die Öffnungszeit: geschlossen.</li>
+              <li data-stage="5">Die Mailbox des Info-Teams nimmt die Nachricht an.</li>
             </ol>
+            <div class="scenario-footer">
+              <span class="scenario-state" data-playback-state aria-hidden="true">Anliegen → Telefonanlage → Ziel</span>
+              <button class="scenario-replay" type="button" aria-label="Animation erneut abspielen" title="Animation erneut abspielen" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16l13-8Z" /></svg> Abspielen</button>
+            </div>
             <p class="visually-hidden" data-scenario-status aria-live="polite"></p>
           </div>
         </article>
@@ -195,23 +238,43 @@
               Ansagen informieren, die Reihenfolge bleibt erhalten.
             </p>
             <p class="scenario-benefit"><strong>Vorteil:</strong> Weniger verlorene Anrufe und ein ruhigerer Ablauf im Team.</p>
-            <button class="scenario-replay" type="button">Animation wiederholen</button>
           </div>
-          <div class="scenario-demo">
-            <div class="scenario-flow" role="img" aria-label="Mehrere Anrufe warten geordnet und werden mit dem nächsten freien Platz verbunden">
-              <div class="flow-stack flow-stack-queue" data-stage="1">
-                <span>Anruf 1</span><span>Anruf 2</span><span>Anruf 3</span>
+          <div class="scenario-demo" data-scenario="queue">
+            <div class="scenario-toolbar">
+              <span class="scenario-demo-label">Ein Anruf, ein klarer Weg</span>
+              <button class="scenario-pivot" type="button" aria-label="Ansicht drehen: senkrechte Darstellung" aria-pressed="false" aria-controls="flow-queue" title="Ansicht drehen" hidden>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 8A8 8 0 0 0 6 5M20 3v5h-5" /><rect x="7" y="9" width="8" height="11" rx="1.5" /></svg>
+                <span>Ansicht drehen</span>
+              </button>
+            </div>
+            <div class="scenario-flow" id="flow-queue" role="img" aria-label="Ein Anrufer braucht Support. Die PBX hält ihn auf Position 1 in der Warteschlange und verbindet ihn mit der frei gewordenen Nebenstelle 21.">
+              <div class="flow-node flow-caller" data-stage="1">
+                <span class="flow-label">Anrufer</span>
+                <strong data-caller-intent>Support</strong>
+                <small data-caller-request>„Ich brauche Hilfe.“</small>
               </div>
-              <span class="flow-route" data-stage="2" aria-hidden="true">→</span>
-              <div class="flow-node flow-node-main" data-stage="2"><span aria-hidden="true">≡</span><strong>Warteschlange</strong></div>
-              <span class="flow-route" data-stage="3" aria-hidden="true">→</span>
-              <div class="flow-node" data-stage="3"><span aria-hidden="true">✓</span><strong>Freier Platz</strong></div>
+              <span class="flow-route" data-stage="2" aria-hidden="true"><span class="flow-packet"></span></span>
+              <div class="flow-node flow-node-main" data-stage="3">
+                <span class="flow-label">PBX</span>
+                <strong>Warten</strong>
+                <small data-pbx-detail>Position 1 von 3</small>
+              </div>
+              <span class="flow-route" data-stage="4" aria-hidden="true"><span class="flow-packet"></span></span>
+              <div class="flow-node flow-destination" data-stage="5">
+                <span class="flow-label">Nebenstelle</span>
+                <strong data-destination-name>Support</strong>
+                <small data-destination-detail>21 · wird frei</small>
+              </div>
             </div>
             <ol class="scenario-steps">
-              <li data-stage="1">Mehrere Menschen rufen gleichzeitig an.</li>
-              <li data-stage="2">Die PBX hält Reihenfolge und informiert.</li>
-              <li data-stage="3">Der nächste freie Platz übernimmt.</li>
+              <li data-stage="1">Drei Anrufe warten auf den Support.</li>
+              <li data-stage="3">Die PBX informiert und hält die Reihenfolge.</li>
+              <li data-stage="5">Nebenstelle 21 wird frei und übernimmt den ersten Anruf.</li>
             </ol>
+            <div class="scenario-footer">
+              <span class="scenario-state" data-playback-state aria-hidden="true">Anliegen → Telefonanlage → Ziel</span>
+              <button class="scenario-replay" type="button" aria-label="Animation erneut abspielen" title="Animation erneut abspielen" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16l13-8Z" /></svg> Abspielen</button>
+            </div>
             <p class="visually-hidden" data-scenario-status aria-live="polite"></p>
           </div>
         </article>
@@ -225,23 +288,43 @@
               Nebenstelle nutzen – im Büro, zu Hause oder unterwegs.
             </p>
             <p class="scenario-benefit"><strong>Vorteil:</strong> Erreichbar arbeiten, ohne private Rufnummern weiterzugeben.</p>
-            <button class="scenario-replay" type="button">Animation wiederholen</button>
           </div>
-          <div class="scenario-demo">
-            <div class="scenario-flow" role="img" aria-label="Eine Nebenstelle klingelt auf Tischtelefon, Notebook und Smartphone">
-              <div class="flow-node" data-stage="1"><span aria-hidden="true">☎</span><strong>Nebenstelle</strong></div>
-              <span class="flow-route" data-stage="2" aria-hidden="true">→</span>
-              <div class="flow-node flow-node-main" data-stage="2"><span aria-hidden="true">PBX</span><strong>Identität</strong></div>
-              <span class="flow-route" data-stage="3" aria-hidden="true">→</span>
-              <div class="flow-stack" data-stage="3">
-                <span>Tischtelefon</span><span>Notebook</span><span>Smartphone</span>
+          <div class="scenario-demo" data-scenario="mobile">
+            <div class="scenario-toolbar">
+              <span class="scenario-demo-label">Ein Anruf, ein klarer Weg</span>
+              <button class="scenario-pivot" type="button" aria-label="Ansicht drehen: senkrechte Darstellung" aria-pressed="false" aria-controls="flow-mobile" title="Ansicht drehen" hidden>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 8A8 8 0 0 0 6 5M20 3v5h-5" /><rect x="7" y="9" width="8" height="11" rx="1.5" /></svg>
+                <span>Ansicht drehen</span>
+              </button>
+            </div>
+            <div class="scenario-flow" id="flow-mobile" role="img" aria-label="Ein Anrufer hat eine Frage an die Info. Die PBX erreicht dieselbe Nebenstelle 10 auf dem Smartphone, auch unterwegs.">
+              <div class="flow-node flow-caller" data-stage="1">
+                <span class="flow-label">Anrufer</span>
+                <strong data-caller-intent>Info</strong>
+                <small data-caller-request>„Eine kurze Frage …“</small>
+              </div>
+              <span class="flow-route" data-stage="2" aria-hidden="true"><span class="flow-packet"></span></span>
+              <div class="flow-node flow-node-main" data-stage="3">
+                <span class="flow-label">PBX</span>
+                <strong>Geräte</strong>
+                <small data-pbx-detail>gleiche Rufnummer</small>
+              </div>
+              <span class="flow-route" data-stage="4" aria-hidden="true"><span class="flow-packet"></span></span>
+              <div class="flow-node flow-destination" data-stage="5">
+                <span class="flow-label">Nebenstelle</span>
+                <strong data-destination-name>Info</strong>
+                <small data-destination-detail>10 · Smartphone</small>
               </div>
             </div>
             <ol class="scenario-steps">
-              <li data-stage="1">Die geschäftliche Nebenstelle wird angerufen.</li>
-              <li data-stage="2">Die PBX kennt die angemeldeten Geräte.</li>
-              <li data-stage="3">Die erlaubten Geräte klingeln.</li>
+              <li data-stage="1">Der Anrufer wählt die geschäftliche Nummer.</li>
+              <li data-stage="3">Die PBX findet die angemeldeten Geräte.</li>
+              <li data-stage="5">Nebenstelle 10 · Info nimmt am Smartphone ab.</li>
             </ol>
+            <div class="scenario-footer">
+              <span class="scenario-state" data-playback-state aria-hidden="true">Anliegen → Telefonanlage → Ziel</span>
+              <button class="scenario-replay" type="button" aria-label="Animation erneut abspielen" title="Animation erneut abspielen" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16l13-8Z" /></svg> Abspielen</button>
+            </div>
             <p class="visually-hidden" data-scenario-status aria-live="polite"></p>
           </div>
         </article>
@@ -255,23 +338,43 @@
               einen anderen Standort oder ein Mobiltelefon gehen.
             </p>
             <p class="scenario-benefit"><strong>Vorteil:</strong> Geplante Ausfallsicherheit statt Improvisation im Ernstfall.</p>
-            <button class="scenario-replay" type="button">Animation wiederholen</button>
           </div>
-          <div class="scenario-demo">
-            <div class="scenario-flow" role="img" aria-label="Bei einer Störung verwendet die PBX einen vorbereiteten Ersatzweg">
-              <div class="flow-node" data-stage="1"><span aria-hidden="true">!</span><strong>Störung</strong></div>
-              <span class="flow-route" data-stage="2" aria-hidden="true">→</span>
-              <div class="flow-node flow-node-main" data-stage="2"><span aria-hidden="true">PBX</span><strong>Regel greift</strong></div>
-              <span class="flow-route" data-stage="3" aria-hidden="true">→</span>
-              <div class="flow-stack" data-stage="3">
-                <span>Ersatzstandort</span><span>Mobiltelefon</span>
+          <div class="scenario-demo" data-scenario="fallback">
+            <div class="scenario-toolbar">
+              <span class="scenario-demo-label">Ein Anruf, ein klarer Weg</span>
+              <button class="scenario-pivot" type="button" aria-label="Ansicht drehen: senkrechte Darstellung" aria-pressed="false" aria-controls="flow-fallback" title="Ansicht drehen" hidden>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 8A8 8 0 0 0 6 5M20 3v5h-5" /><rect x="7" y="9" width="8" height="11" rx="1.5" /></svg>
+                <span>Ansicht drehen</span>
+              </button>
+            </div>
+            <div class="scenario-flow" id="flow-fallback" role="img" aria-label="Ein Anrufer braucht Support. Der Büroanschluss ist ausgefallen. Die PBX verbindet ihn über den vorbereiteten Ersatzweg mit dem Mobiltelefon des Supports.">
+              <div class="flow-node flow-caller" data-stage="1">
+                <span class="flow-label">Anrufer</span>
+                <strong data-caller-intent>Support</strong>
+                <small data-caller-request>„Mein PC streikt.“</small>
+              </div>
+              <span class="flow-route" data-stage="2" aria-hidden="true"><span class="flow-packet"></span></span>
+              <div class="flow-node flow-node-main" data-stage="3">
+                <span class="flow-label">PBX</span>
+                <strong>Ersatzweg</strong>
+                <small data-pbx-detail>Büro nicht erreichbar</small>
+              </div>
+              <span class="flow-route" data-stage="4" aria-hidden="true"><span class="flow-packet"></span></span>
+              <div class="flow-node flow-destination" data-stage="5">
+                <span class="flow-label">Support</span>
+                <strong data-destination-name>Mobiltelefon</strong>
+                <small data-destination-detail>vorbereitete Umleitung</small>
               </div>
             </div>
             <ol class="scenario-steps">
-              <li data-stage="1">Ein vorgesehener Weg ist nicht erreichbar.</li>
-              <li data-stage="2">Die vorbereitete Ausfallregel wird aktiv.</li>
-              <li data-stage="3">Anrufe gehen über den Ersatzweg weiter.</li>
+              <li data-stage="1">Der Anrufer braucht Hilfe bei einem PC-Problem.</li>
+              <li data-stage="3">Die PBX erkennt: Der Büroanschluss ist ausgefallen.</li>
+              <li data-stage="5">Der Support nimmt über die vorbereitete Mobilumleitung ab.</li>
             </ol>
+            <div class="scenario-footer">
+              <span class="scenario-state" data-playback-state aria-hidden="true">Anliegen → Telefonanlage → Ziel</span>
+              <button class="scenario-replay" type="button" aria-label="Animation erneut abspielen" title="Animation erneut abspielen" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16l13-8Z" /></svg> Abspielen</button>
+            </div>
             <p class="visually-hidden" data-scenario-status aria-live="polite"></p>
           </div>
         </article>

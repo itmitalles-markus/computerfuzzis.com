@@ -8,6 +8,10 @@ die Versionsnummern folgen [Semantic Versioning](https://semver.org/lang/de/).
 
 ### Geändert
 
+- PBX-Szenarien kompakter gestaltet: Anrufer mit Anliegen, sichtbarer Anrufweg und konkretes Ziel
+- Drehknopf am Rand zum Wechsel zwischen waagerechtem und senkrechtem Anrufweg ergänzt
+- Kleinen Play-Button unter jeder PBX-Animation zum erneuten Abspielen ergänzt
+- PBX-Animationen starten erst bei vollständig sichtbarer Animationsfläche und warten beim Weiterscrollen; Info und Support sind im ersten Beispiel auswählbar
 - Schreibweise von Marke, Domain und Repository einheitlich auf `computerfuzzis.com` korrigiert
 - automatische, repository-spezifisch authentifizierte Spiegelung aller Branches und Tags in das private persönliche Repository ergänzt
 
