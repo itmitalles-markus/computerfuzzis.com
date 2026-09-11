@@ -1,5 +1,7 @@
 # computerfuzzis.com
 
+**Versionshistorie:** [Was wurde geändert?](CHANGELOG.md) · [Releases und Downloads](https://github.com/itmitalles-markus/computerfuzzis.com/releases) · [Pflege der Historie](VERSIONING.md)
+
 Die Website für **computerfuzzis.com** – schnell, zugänglich und ohne Build-Abhängigkeiten.
 
 ## Lokal ansehen
